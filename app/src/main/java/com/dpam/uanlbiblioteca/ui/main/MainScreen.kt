@@ -15,7 +15,13 @@ import com.dpam.uanlbiblioteca.ui.core.navigation.navigationbar.NavigationItem
 
 @Composable
 fun MainScreen(mainNavController: NavHostController) {
-    val items = listOf(NavigationItem.Home(), NavigationItem.Configuration())
+    val items = listOf(
+        NavigationItem.Home(),
+        NavigationItem.Catalog(),
+        NavigationItem.Loans(),
+        NavigationItem.Libraries(),
+        NavigationItem.Profile(),
+    )
 
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
@@ -41,7 +47,7 @@ fun NavigationSuiteScope.navigationBar(
     items.forEach { item ->
         item(
             icon = item.icon,
-            label = { Text(item.title) },
+            label = { Text(item.title()) },
             onClick = {
                 navController.navigate(route = item.route) {
                     navController.graph.startDestinationRoute?.let { route ->
@@ -53,7 +59,8 @@ fun NavigationSuiteScope.navigationBar(
                     restoreState = true
                 }
             },
-            selected = currentDestination?.hierarchy?.any { it.route == item.route } == true
+            selected = currentDestination?.hierarchy?.any { it.route == item.route } == true,
+            alwaysShowLabel = false,
         )
     }
 }

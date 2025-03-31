@@ -11,5 +11,14 @@ sealed class Routes(val route: String) {
     data object Home: Routes(route = "home")
 
     @Serializable
-    data object Settings: Routes(route = "settings")
+    data object Catalog: Routes(route = "catalog")
+
+    @Serializable
+    data object Loans: Routes(route = "loans")
+
+    @Serializable
+    data object Libraries: Routes(route = "libraries")
+
+    @Serializable
+    data object Profile: Routes(route = "profile")
 }

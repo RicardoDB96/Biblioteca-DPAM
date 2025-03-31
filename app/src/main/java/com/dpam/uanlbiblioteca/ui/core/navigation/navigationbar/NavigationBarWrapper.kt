@@ -5,8 +5,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.dpam.uanlbiblioteca.ui.core.navigation.Routes
+import com.dpam.uanlbiblioteca.ui.main.tabs.catalog.CatalogScreen
 import com.dpam.uanlbiblioteca.ui.main.tabs.home.HomeScreen
-import com.dpam.uanlbiblioteca.ui.main.tabs.settings.SettingsScreen
+import com.dpam.uanlbiblioteca.ui.main.tabs.libraries.LibrariesScreen
+import com.dpam.uanlbiblioteca.ui.main.tabs.loans.LoansScreen
+import com.dpam.uanlbiblioteca.ui.main.tabs.profile.ProfileScreen
 
 @Composable
 fun NavigationBarWrapper(navController: NavHostController, mainNavController: NavHostController) {
@@ -14,8 +17,17 @@ fun NavigationBarWrapper(navController: NavHostController, mainNavController: Na
         composable(route = Routes.Home.route) {
             HomeScreen()
         }
-        composable(route = Routes.Settings.route) {
-            SettingsScreen()
+        composable(route = Routes.Catalog.route) {
+            CatalogScreen()
+        }
+        composable(route = Routes.Loans.route) {
+            LoansScreen()
+        }
+        composable(route = Routes.Libraries.route) {
+            LibrariesScreen()
+        }
+        composable(route = Routes.Profile.route) {
+            ProfileScreen()
         }
     }
 }
