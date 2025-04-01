@@ -1,4 +1,4 @@
-package com.dpam.uanlbiblioteca.ui.main.tabs.catalog
+package com.dpam.uanlbiblioteca.ui.main.tabs.catalog.components
 
 import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.clickable
