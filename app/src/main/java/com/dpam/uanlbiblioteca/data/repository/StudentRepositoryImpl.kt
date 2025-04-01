@@ -14,13 +14,14 @@ class StudentRepositoryImpl(
     override suspend fun save(student: StudentModel) {
         studentDao.deleteAllStudents()
 
-        val majorId = majorDao.getMajorIdByName(majorName = student.major)
-        val campusId = campusDao.getCampusIdByName(campusName = student.campus)
+        val majorId = majorDao.getMajorIdByName(majorName = student.major)?.id
+        val campusId = campusDao.getCampusIdByName(campusName = student.campus)?.id
 
         if (majorId != null && campusId != null) {
             studentDao.insertStudent(student.asEntity(majorId = majorId, campusId = campusId))
         }
     }
 
-    override suspend fun getStudent(): StudentModel? = studentDao.getStudentWithDetails()?.asDomain()
+    override suspend fun getStudent(): StudentModel? =
+        studentDao.getStudentWithDetails()?.asDomain()
 }

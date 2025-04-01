@@ -15,5 +15,5 @@ interface MajorDao {
     suspend fun getAllMajors(): List<MajorEntity>
 
     @Query("SELECT * FROM MajorEntity WHERE name = :majorName")
-    suspend fun getMajorIdByName(majorName: String): Long?
+    suspend fun getMajorIdByName(majorName: String): MajorEntity?
 }

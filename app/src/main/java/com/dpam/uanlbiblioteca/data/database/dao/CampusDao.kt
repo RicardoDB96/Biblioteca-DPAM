@@ -15,5 +15,5 @@ interface CampusDao {
     suspend fun getAllCampuses(): List<CampusEntity>
 
     @Query("SELECT * FROM CampusEntity WHERE name = :campusName")
-    suspend fun getCampusIdByName(campusName: String): Long?
+    suspend fun getCampusIdByName(campusName: String): CampusEntity?
 }
