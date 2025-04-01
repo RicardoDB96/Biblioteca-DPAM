@@ -9,25 +9,26 @@ import androidx.room.PrimaryKey
 import androidx.room.Relation
 import com.dpam.uanlbiblioteca.domain.model.StudentModel
 
+
 @Entity(
+    indices = [
+        Index(value = ["email"], unique = true),
+        Index(value = ["enrollment_number"], unique = true),
+        Index(value = ["major_id"]), // Se recomienda para claves foráneas
+        Index(value = ["campus_id"])
+    ],
     foreignKeys = [
         ForeignKey(
             entity = MajorEntity::class,
             parentColumns = ["id"],
-            childColumns = ["major_id"],
-            onDelete = ForeignKey.SET_NULL
+            childColumns = ["major_id"]
         ),
         ForeignKey(
             entity = CampusEntity::class,
             parentColumns = ["id"],
-            childColumns = ["campus_id"],
-            onDelete = ForeignKey.SET_NULL
+            childColumns = ["campus_id"]
         )
-    ],
-    indices = [Index(value = ["email"], unique = true), Index(
-        value = ["enrollment_number"],
-        unique = true
-    )]
+    ]
 )
 data class StudentEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
