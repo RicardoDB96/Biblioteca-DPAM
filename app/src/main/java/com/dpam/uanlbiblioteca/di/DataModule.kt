@@ -16,4 +16,7 @@ val dataModule = module {
 
     // Dao's
     single { get<AppDatabase>().bookDao() }
+    single { get<AppDatabase>().studentDao() }
+    single { get<AppDatabase>().majorDao() }
+    single { get<AppDatabase>().campusDao() }
 }
