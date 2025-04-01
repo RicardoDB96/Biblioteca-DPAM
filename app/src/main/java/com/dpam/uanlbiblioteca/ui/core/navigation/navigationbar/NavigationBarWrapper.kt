@@ -18,7 +18,7 @@ fun NavigationBarWrapper(navController: NavHostController, mainNavController: Na
             HomeScreen()
         }
         composable(route = Routes.Catalog.route) {
-            CatalogScreen()
+            CatalogScreen(onBookClick = { id -> mainNavController.navigate(Routes.BookDetail(id)) })
         }
         composable(route = Routes.Loans.route) {
             LoansScreen()

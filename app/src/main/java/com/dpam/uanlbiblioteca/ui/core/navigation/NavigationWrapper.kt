@@ -9,10 +9,13 @@ import com.dpam.uanlbiblioteca.ui.main.MainScreen
 @Composable
 fun NavigationWrapper() {
     val mainNavController = rememberNavController()
+    val navController = rememberNavController()
 
     NavHost(navController = mainNavController, startDestination = Routes.Main) {
         composable<Routes.Main> {
-            MainScreen(mainNavController = mainNavController)
+            MainScreen(mainNavController = mainNavController, navController = navController)
+        }
+        composable<Routes.BookDetail> {
         }
     }
 }

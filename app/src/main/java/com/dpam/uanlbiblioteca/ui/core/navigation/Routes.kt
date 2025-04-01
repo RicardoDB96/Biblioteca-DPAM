@@ -21,4 +21,7 @@ sealed class Routes(val route: String) {
 
     @Serializable
     data object Profile: Routes(route = "profile")
+
+    @Serializable
+    data class BookDetail(val id: Long)
 }

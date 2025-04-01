@@ -9,12 +9,11 @@ import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
 import com.dpam.uanlbiblioteca.ui.core.navigation.navigationbar.NavigationBarWrapper
 import com.dpam.uanlbiblioteca.ui.core.navigation.navigationbar.NavigationItem
 
 @Composable
-fun MainScreen(mainNavController: NavHostController) {
+fun MainScreen(mainNavController: NavHostController, navController: NavHostController) {
     val items = listOf(
         NavigationItem.Home(),
         NavigationItem.Catalog(),
@@ -23,7 +22,6 @@ fun MainScreen(mainNavController: NavHostController) {
         NavigationItem.Profile(),
     )
 
-    val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
 
     NavigationSuiteScaffold(navigationSuiteItems = {
