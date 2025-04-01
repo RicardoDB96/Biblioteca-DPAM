@@ -17,6 +17,6 @@ interface StudentDao {
     suspend fun deleteAllStudents()
 
     @Transaction
-    @Query("SELECT * FROM StudentEntity WHERE id = :id LIMIT 1")
-    suspend fun getStudentWithDetails(id: Long): StudentWithDetails?
+    @Query("SELECT * FROM StudentEntity LIMIT 1")
+    suspend fun getStudentWithDetails(): StudentWithDetails?
 }

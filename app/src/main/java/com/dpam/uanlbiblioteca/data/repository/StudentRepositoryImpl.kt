@@ -22,5 +22,5 @@ class StudentRepositoryImpl(
         }
     }
 
-    override suspend fun getStudent(id: Long): StudentModel? = studentDao.getStudentWithDetails(id)?.asDomain()
+    override suspend fun getStudent(): StudentModel? = studentDao.getStudentWithDetails()?.asDomain()
 }
