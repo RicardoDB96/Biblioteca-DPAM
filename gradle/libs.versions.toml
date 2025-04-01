@@ -8,12 +8,13 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.1"
 composeBom = "2025.03.01"
-koin-bom = "4.0.2"
+koin-bom = "4.0.4"
 navigation = "2.8.9"
 adaptative-navigation = "1.3.1"
 serialization-json = "1.8.0"
 room = "2.6.1"
 ksp = "2.1.10-1.0.29"
+landscapist = "2.4.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -50,6 +51,9 @@ kotlin-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serializat
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+
+# Images
+landscapist-coil = { module = "com.github.skydoves:landscapist-coil3", version.ref = "landscapist" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

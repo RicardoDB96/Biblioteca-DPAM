@@ -72,6 +72,10 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
+
+    // Images
+    implementation(libs.landscapist.coil)
+
     // Test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
