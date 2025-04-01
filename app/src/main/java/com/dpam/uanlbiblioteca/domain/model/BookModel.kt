@@ -1,6 +1,6 @@
 package com.dpam.uanlbiblioteca.domain.model
 
-import com.dpam.uanlbiblioteca.data.database.model.BookEntity
+import com.dpam.uanlbiblioteca.data.database.entity.BookEntity
 
 data class BookModel(
     val id: Long = 0,

@@ -1,7 +1,7 @@
 package com.dpam.uanlbiblioteca.data.repository
 
 import com.dpam.uanlbiblioteca.data.database.dao.BookDao
-import com.dpam.uanlbiblioteca.data.database.model.asDomain
+import com.dpam.uanlbiblioteca.data.database.entity.asDomain
 import com.dpam.uanlbiblioteca.domain.model.BookModel
 import com.dpam.uanlbiblioteca.domain.model.asEntity
 import com.dpam.uanlbiblioteca.domain.repository.BookRepository

@@ -1,4 +1,4 @@
-package com.dpam.uanlbiblioteca.data.database.model
+package com.dpam.uanlbiblioteca.data.database.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
