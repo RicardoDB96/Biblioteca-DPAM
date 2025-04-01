@@ -27,7 +27,7 @@ fun NavigationBarWrapper(navController: NavHostController, mainNavController: Na
             LibrariesScreen()
         }
         composable(route = Routes.Profile.route) {
-            ProfileScreen()
+            ProfileScreen(onSettingsClick = {})
         }
     }
 }

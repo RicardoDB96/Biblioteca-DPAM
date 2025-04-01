@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import com.dpam.uanlbiblioteca.R
 import com.dpam.uanlbiblioteca.ui.core.componets.ScreenLayout
 import com.dpam.uanlbiblioteca.ui.core.componets.TopAppBar
+import com.dpam.uanlbiblioteca.ui.main.tabs.catalog.components.BookCard
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable

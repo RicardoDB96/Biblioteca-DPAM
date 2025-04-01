@@ -8,6 +8,8 @@
     <string name="libraries">Librerias</string>
     <string name="profile">Perfil</string>
 
+    <string name="settings">Configuracion</string>
+
     <!--- Common -->
     <string name="back">Volver</string>
 </resources>
