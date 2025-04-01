@@ -55,7 +55,7 @@ fun ProfileScreen(vm: ProfileViewModel = koinViewModel(), onSettingsClick: () ->
     }) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             CoilImage(
-                imageModel = { state.student.imageUri },
+                imageModel = { state.student.profileURL },
                 imageOptions = ImageOptions(
                     contentScale = ContentScale.Crop,
                     alignment = Alignment.Center

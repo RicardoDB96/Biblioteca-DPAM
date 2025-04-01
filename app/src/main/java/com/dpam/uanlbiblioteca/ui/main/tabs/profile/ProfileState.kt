@@ -9,6 +9,6 @@ data class ProfileState(
         major = "Lic. en Historia",
         campus = "Facultad de Filosofia y Letras",
         enrollmentNumber = "4499796",
-        imageUri = "https://pbs.twimg.com/profile_images/1540139703982243843/aCZ0X-kY_400x400.jpg"
+        profileURL = "https://pbs.twimg.com/profile_images/1540139703982243843/aCZ0X-kY_400x400.jpg"
     ),
 )

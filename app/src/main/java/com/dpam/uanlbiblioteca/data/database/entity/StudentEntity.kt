@@ -7,6 +7,7 @@ import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
 import androidx.room.Relation
+import com.dpam.uanlbiblioteca.domain.model.StudentModel
 
 @Entity(
     foreignKeys = [
@@ -50,4 +51,13 @@ data class StudentWithDetails(
         entityColumn = "id"
     )
     val campus: CampusEntity
-)
+) {
+    fun asDomain() = StudentModel(
+        name = student.name,
+        email = student.email,
+        major = major.name,
+        campus = campus.name,
+        enrollmentNumber = student.enrollmentNumber,
+        profileURL = student.profileImageUrl,
+    )
+}
