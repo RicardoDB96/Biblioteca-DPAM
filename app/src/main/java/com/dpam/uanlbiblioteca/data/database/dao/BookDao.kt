@@ -12,6 +12,12 @@ interface BookDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertBooks(books: List<BookEntity>)
 
+    @Query("DELETE FROM BookEntity")
+    suspend fun deleteAllBooks()
+
     @Query("SELECT * FROM BookEntity")
     fun getAllBooks(): Flow<List<BookEntity>>
+
+    @Query("SELECT * FROM BookEntity WHERE id = :bookId")
+    suspend fun getBookById(bookId: Long): BookEntity?
 }
