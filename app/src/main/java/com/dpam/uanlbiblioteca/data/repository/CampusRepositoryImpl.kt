@@ -10,4 +10,7 @@ class CampusRepositoryImpl(private val campusDao: CampusDao) : CampusRepository 
     }
 
     override suspend fun getAllCampus(): List<CampusEntity> = campusDao.getAllCampuses()
+
+    override suspend fun getCampusIdByName(campusName: String): Long? =
+        campusDao.getCampusIdByName(campusName)?.id
 }

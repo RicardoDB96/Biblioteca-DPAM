@@ -13,11 +13,7 @@ interface BookLibraryDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertBookLibraryRelations(relations: List<BookLibraryEntity>)
 
-    @Query("DELETE FROM BookLibraryEntity")
-    suspend fun deleteAllBookLibraryRelations()
-
     @Transaction
-    @Query("SELECT * FROM BookEntity WHERE id = :bookId")
+    @Query("SELECT * FROM BookEntity WHERE book_id = :bookId")
     suspend fun getBookWithLibrariesById(bookId: Long): BookWithLibraries?
-
 }

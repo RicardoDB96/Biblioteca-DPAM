@@ -13,13 +13,13 @@ import androidx.room.Relation
     foreignKeys = [
         ForeignKey(
             entity = BookEntity::class,
-            parentColumns = ["id"],
+            parentColumns = ["book_id"],
             childColumns = ["book_id"],
             onDelete = ForeignKey.CASCADE
         ),
         ForeignKey(
             entity = LibraryEntity::class,
-            parentColumns = ["id"],
+            parentColumns = ["library_id"],
             childColumns = ["library_id"],
             onDelete = ForeignKey.CASCADE
         )
@@ -38,8 +38,8 @@ data class BookLibraryEntity(
 data class BookWithLibraries(
     @Embedded val book: BookEntity,
     @Relation(
-        parentColumn = "id",
-        entityColumn = "id",
+        parentColumn = "book_id",
+        entityColumn = "library_id",
         associateBy = Junction(BookLibraryEntity::class, parentColumn = "book_id", entityColumn = "library_id")
     )
     val libraries: List<LibraryEntity>

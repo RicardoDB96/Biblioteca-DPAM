@@ -18,7 +18,8 @@ import androidx.room.PrimaryKey
     indices = [Index(value = ["campus_id"])]
 )
 data class LibraryEntity(
-    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    @PrimaryKey
+    @ColumnInfo(name = "library_id") val id: Long = 0,
     val name: String,
     val location: String,
     val hours: String?,

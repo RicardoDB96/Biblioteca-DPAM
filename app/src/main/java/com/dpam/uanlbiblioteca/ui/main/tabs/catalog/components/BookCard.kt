@@ -5,6 +5,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
@@ -22,7 +23,7 @@ import com.skydoves.landscapist.coil3.CoilImage
 
 @Composable
 fun BookCard(modifier: Modifier = Modifier, book: BookModel, onClick: () -> Unit) {
-    Card(modifier = modifier.padding(4.dp), shape = RoundedCornerShape(10.dp)) {
+    Card(modifier = modifier.padding(4.dp).width(120.dp), shape = RoundedCornerShape(10.dp)) {
         Box(modifier = Modifier.clickable(onClick = onClick)) {
             CoilImage(
                 imageModel = { book.imageUrl },

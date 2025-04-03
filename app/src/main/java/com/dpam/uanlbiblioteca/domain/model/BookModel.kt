@@ -6,16 +6,12 @@ data class BookModel(
     val id: Long = 0,
     val title: String,
     val author: String,
-    val category: String,
-    val location: String?,
     val isbn: String?,
     val imageUrl: String?
 ) {
     fun asEntity() = BookEntity(
         title = title,
         author = author,
-        category = category,
-        location = location,
         imageUrl = imageUrl,
         isbn = isbn
     )

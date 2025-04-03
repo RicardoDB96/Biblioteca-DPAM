@@ -31,7 +31,7 @@ import com.dpam.uanlbiblioteca.domain.model.StudentModel
     ]
 )
 data class StudentEntity(
-    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    @PrimaryKey val id: Long = 0,
     @ColumnInfo(name = "name") val name: String,
     @ColumnInfo(name = "email") val email: String,
     @ColumnInfo(name = "profile_image_url") val profileImageUrl: String,
