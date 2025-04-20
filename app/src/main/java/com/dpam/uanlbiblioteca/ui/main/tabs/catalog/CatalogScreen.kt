@@ -45,24 +45,36 @@ fun CatalogScreen(
         ) {
             if (state.searchQuery.isNotEmpty()) {
                 item {
-                    BooksList(title = "Resultados de búsqueda", books = state.searchResults, onBookClick)
+                    BooksList(
+                        title = "Resultados de búsqueda",
+                        books = state.searchResults,
+                        onBookClick
+                    )
                 }
             } else {
                 if (state.booksByCampus.isNotEmpty()) {
                     item {
-                        BooksList(title = "Disponibles en tu campus", books = state.booksByCampus, onBookClick)
-                    }
-                }
-
-                state.booksByCategory.forEach { (category, books) ->
-                    item {
-                        BooksList(title = category, books = books, onBookClick)
+                        BooksList(
+                            title = "Disponibles en tu campus",
+                            books = state.booksByCampus,
+                            onBookClick = onBookClick
+                        )
                     }
                 }
 
                 if (state.recentlyAdded.isNotEmpty()) {
                     item {
-                        BooksList(title = "Recientemente agregados", books = state.recentlyAdded, onBookClick)
+                        BooksList(
+                            title = "Recientemente agregados",
+                            books = state.recentlyAdded,
+                            onBookClick = onBookClick
+                        )
+                    }
+                }
+
+                state.booksByCategory.forEach { (category, books) ->
+                    item {
+                        BooksList(title = category, books = books, onBookClick = onBookClick)
                     }
                 }
             }
