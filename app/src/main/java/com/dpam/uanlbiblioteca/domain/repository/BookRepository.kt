@@ -28,4 +28,6 @@ interface BookRepository {
 
     fun getBooks(): Flow<List<BookWithDetails>>
     fun searchBooks(query: String): Flow<List<BookWithDetails>>
+    fun getBookById(bookId: Long): Flow<BookWithDetails>
+    fun getBookAvailableLibraries(bookId: Long): Flow<List<BookLibraryEntity>>
 }

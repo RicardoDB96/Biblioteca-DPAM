@@ -7,6 +7,7 @@ import androidx.room.Query
 import androidx.room.Transaction
 import com.dpam.uanlbiblioteca.data.database.entity.BookLibraryEntity
 import com.dpam.uanlbiblioteca.data.database.entity.BookWithLibraries
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface BookLibraryDao {
@@ -16,4 +17,7 @@ interface BookLibraryDao {
     @Transaction
     @Query("SELECT * FROM BookEntity WHERE book_id = :bookId")
     suspend fun getBookWithLibrariesById(bookId: Long): BookWithLibraries?
+
+    @Query("SELECT * FROM BookLibraryEntity WHERE book_id = :bookId")
+    fun getBookLibraryById(bookId: Long): Flow<List<BookLibraryEntity>>
 }

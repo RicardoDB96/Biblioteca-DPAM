@@ -76,6 +76,9 @@ dependencies {
     // Images
     implementation(libs.landscapist.coil)
 
+    // Compose Unstyled
+    implementation(libs.compose.unstyled)
+
     // Test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -11,9 +11,10 @@ import androidx.compose.ui.Modifier
 fun ScreenLayout(
     modifier: Modifier = Modifier,
     topBar: @Composable () -> Unit = {},
+    floatingActionButton: @Composable () -> Unit = {},
     content: @Composable (ColumnScope.() -> Unit),
 ) {
-    Scaffold(topBar = topBar) {
+    Scaffold(topBar = topBar, floatingActionButton = floatingActionButton) {
         Column(modifier = modifier.padding(it), content = content)
     }
 }

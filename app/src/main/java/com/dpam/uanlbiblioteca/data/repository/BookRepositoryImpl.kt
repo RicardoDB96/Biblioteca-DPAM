@@ -50,4 +50,12 @@ class BookRepositoryImpl(
     override fun searchBooks(query: String): Flow<List<BookWithDetails>> {
         return bookDao.searchBooks(query)
     }
+
+    override fun getBookById(bookId: Long): Flow<BookWithDetails> {
+        return bookDao.getBookById(bookId)
+    }
+
+    override fun getBookAvailableLibraries(bookId: Long): Flow<List<BookLibraryEntity>> {
+        return bookLibraryDao.getBookLibraryById(bookId)
+    }
 }

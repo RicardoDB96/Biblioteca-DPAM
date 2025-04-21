@@ -226,7 +226,7 @@ object SampleList {
             title = "Fundamentos de Química",
             author = "Raymond Chang",
             isbn = "9786073209768",
-            imageUrl = "https://covers.openlibrary.org/b/isbn/9786073209768-L.jpg"
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9789701062968-L.jpg"
         ),
         BookEntity(
             id = 9,
@@ -315,7 +315,8 @@ object SampleList {
             categoryId = 7
         ),  // Estructuras de Datos y Algoritmos → Programación
         BookCategoryEntity(bookId = 8, categoryId = 8),  // Fundamentos de Química → Química
-        BookCategoryEntity(bookId = 9, categoryId = 9),  // Macroeconomía → Economía
+        BookCategoryEntity(bookId = 8, categoryId = 9),
+        BookCategoryEntity(bookId = 9, categoryId = 5),  // Macroeconomía → Economía
         BookCategoryEntity(bookId = 10, categoryId = 10), // Arte y Percepción Visual → Arte
         BookCategoryEntity(
             bookId = 11,
@@ -375,7 +376,8 @@ object SampleList {
         BookLibraryEntity(bookId = 3, libraryId = 2),
         BookLibraryEntity(bookId = 5, libraryId = 4),
         BookLibraryEntity(bookId = 7, libraryId = 2),
-        BookLibraryEntity(bookId = 8, libraryId = 3),
+        BookLibraryEntity(bookId = 8, libraryId = 3, quantity = 2),
+        BookLibraryEntity(bookId = 8, libraryId = 1, quantity = 3),
         BookLibraryEntity(bookId = 9, libraryId = 1),
         BookLibraryEntity(bookId = 10, libraryId = 5),
         BookLibraryEntity(bookId = 11, libraryId = 2),
