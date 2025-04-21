@@ -18,6 +18,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.dpam.uanlbiblioteca.R
+import com.dpam.uanlbiblioteca.data.database.entity.CampusEntity
 import com.dpam.uanlbiblioteca.data.database.entity.LibraryEntity
 import com.dpam.uanlbiblioteca.ui.core.componets.ScreenLayout
 import com.dpam.uanlbiblioteca.ui.core.componets.TopAppBar
@@ -34,15 +35,21 @@ fun LibrariesScreen(vm: LibrariesViewModel = koinViewModel()) {
             contentPadding = PaddingValues(vertical = 8.dp)
         ) {
             items(items = state.libraries, key = { it.id }) {
-                LibraryCard(library = it)
+                LibraryCard(library = it, campuses = state.campuses)
             }
         }
     }
 }
 
 @Composable
-fun LibraryCard(modifier: Modifier = Modifier, library: LibraryEntity) {
-    Card(modifier = modifier.fillMaxWidth().padding(horizontal = 16.dp)) {
+fun LibraryCard(
+    modifier: Modifier = Modifier,
+    library: LibraryEntity,
+    campuses: List<CampusEntity>,
+) {
+    Card(modifier = modifier
+        .fillMaxWidth()
+        .padding(horizontal = 16.dp)) {
         Column(modifier = Modifier.padding(16.dp)) {
             TextWithBold(boldText = "Nombre: ", normalText = library.name)
             TextWithBold(boldText = "Ubicación: ", normalText = library.location)
@@ -51,7 +58,10 @@ fun LibraryCard(modifier: Modifier = Modifier, library: LibraryEntity) {
                 boldText = "Información de contacto: ",
                 normalText = library.contactInfo ?: "No disponible"
             )
-            TextWithBold(boldText = "Campus: ", normalText = library.campusId.toString())
+            TextWithBold(
+                boldText = "Campus: ",
+                normalText = campuses.find { it.id == library.campusId }?.name ?: "No disponible"
+            )
         }
     }
 }
