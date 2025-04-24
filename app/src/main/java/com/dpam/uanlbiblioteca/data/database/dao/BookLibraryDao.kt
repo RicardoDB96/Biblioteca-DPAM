@@ -20,4 +20,7 @@ interface BookLibraryDao {
 
     @Query("SELECT * FROM BookLibraryEntity WHERE book_id = :bookId")
     fun getBookLibraryById(bookId: Long): Flow<List<BookLibraryEntity>>
+
+    @Query("UPDATE BookLibraryEntity SET quantity = quantity - 1 WHERE book_id = :bookId AND library_id = :libraryId AND quantity > 0")
+    suspend fun decrementQuantity(bookId: Long, libraryId: Long)
 }

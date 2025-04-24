@@ -1,5 +1,7 @@
 package com.dpam.uanlbiblioteca.ui.book_detail
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -51,6 +53,7 @@ import com.dpam.uanlbiblioteca.ui.book_detail.components.CategoriesCard
 import com.dpam.uanlbiblioteca.ui.core.componets.ScreenLayout
 import com.dpam.uanlbiblioteca.ui.core.componets.TopAppBar
 
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun BookDetailScreen(vm: BookDetailViewModel, onBackClick: () -> Unit) {
     val state by vm.state.collectAsState()
@@ -201,7 +204,11 @@ fun BookDetailScreen(vm: BookDetailViewModel, onBackClick: () -> Unit) {
                             }
                             Spacer(modifier = Modifier.weight(2f))
                             Button(
-                                onClick = { sheetState.currentDetent = Hidden },
+                                onClick = {
+                                    sheetState.currentDetent = Hidden
+                                    vm.onLoanBook()
+                                    onBackClick()
+                                },
                                 enabled = state.isLoanEnabled,
                             ) {
                                 Text(text = "Solicitar")

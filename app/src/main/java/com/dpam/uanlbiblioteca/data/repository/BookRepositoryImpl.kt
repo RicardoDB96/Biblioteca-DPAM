@@ -58,4 +58,8 @@ class BookRepositoryImpl(
     override fun getBookAvailableLibraries(bookId: Long): Flow<List<BookLibraryEntity>> {
         return bookLibraryDao.getBookLibraryById(bookId)
     }
+
+    override suspend fun decrementBookQuantity(bookId: Long, libraryId: Long) {
+        bookLibraryDao.decrementQuantity(bookId, libraryId)
+    }
 }

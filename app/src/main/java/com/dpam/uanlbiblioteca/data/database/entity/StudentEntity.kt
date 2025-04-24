@@ -54,6 +54,7 @@ data class StudentWithDetails(
     val campus: CampusEntity
 ) {
     fun asDomain() = StudentModel(
+        id = student.id,
         name = student.name,
         email = student.email,
         major = major.name,

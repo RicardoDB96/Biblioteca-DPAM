@@ -30,4 +30,5 @@ interface BookRepository {
     fun searchBooks(query: String): Flow<List<BookWithDetails>>
     fun getBookById(bookId: Long): Flow<BookWithDetails>
     fun getBookAvailableLibraries(bookId: Long): Flow<List<BookLibraryEntity>>
+    suspend fun decrementBookQuantity(bookId: Long, libraryId: Long)
 }

@@ -28,7 +28,7 @@ class ProfileViewModel(
 
             studentRepository.save(
                 StudentModel(
-                    name = "Diegeishon",
+                    name = "Ricardo",
                     email = "go.diego@uanl.mx",
                     major = "Filosofía y Letras",
                     campus = "Facultad de Filosofía y Letras",
