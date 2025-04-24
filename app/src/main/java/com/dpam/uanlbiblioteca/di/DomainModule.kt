@@ -23,5 +23,5 @@ val domainModule = module {
     single<MajorRepository> { MajorRepositoryImpl(get()) }
     single<CampusRepository> { CampusRepositoryImpl(get()) }
     single<StudentRepository> { StudentRepositoryImpl(get(), get(), get()) }
-    single<LoanRepository> { LoanRepositoryImpl(get()) }
+    single<LoanRepository> { LoanRepositoryImpl(get(), get()) }
 }

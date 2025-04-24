@@ -23,4 +23,20 @@ interface BookLibraryDao {
 
     @Query("UPDATE BookLibraryEntity SET quantity = quantity - 1 WHERE book_id = :bookId AND library_id = :libraryId AND quantity > 0")
     suspend fun decrementQuantity(bookId: Long, libraryId: Long)
+
+    @Query("""
+        SELECT library_id
+        FROM BookLibraryEntity
+        WHERE book_id = :bookId
+        ORDER BY RANDOM()
+        LIMIT 1
+    """)
+    suspend fun getRandomLibraryId(bookId: Long): Long?
+
+    @Query("""
+        UPDATE BookLibraryEntity
+        SET quantity = quantity + 1
+        WHERE book_id = :bookId AND library_id = :libraryId
+    """)
+    suspend fun incrementQuantity(bookId: Long, libraryId: Long)
 }
