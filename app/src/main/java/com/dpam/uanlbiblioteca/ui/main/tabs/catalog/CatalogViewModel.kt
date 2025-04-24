@@ -7,6 +7,7 @@ import com.dpam.uanlbiblioteca.domain.repository.BookRepository
 import com.dpam.uanlbiblioteca.domain.repository.CampusRepository
 import com.dpam.uanlbiblioteca.domain.repository.StudentRepository
 import com.dpam.uanlbiblioteca.utils.SampleList
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -24,6 +25,7 @@ class CatalogViewModel(
 
     init {
         viewModelScope.launch {
+            delay(675)
             bookRepository.saveAll(
                 books = SampleList.books,
                 campuses = SampleList.faculties,
@@ -33,11 +35,11 @@ class CatalogViewModel(
                 bookLibraries = SampleList.bookLibraries
             )
 
-            val student = studentRepository.getStudent()
-            val campusId =
-                campusRepository.getCampusIdByName(campusName = student?.campus ?: "")
-
             bookRepository.getBooks().collect { books ->
+                val student = studentRepository.getStudent()
+                val campusId =
+                    campusRepository.getCampusIdByName(campusName = student?.campus ?: "")
+
                 _uiState.value = _uiState.value.copy(
                     booksByCampus = filterBooksByCampus(books = books, campusId = campusId),
                     booksByCategory = groupBooksByCategory(books),

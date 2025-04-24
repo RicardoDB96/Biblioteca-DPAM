@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dpam.uanlbiblioteca.domain.repository.CampusRepository
 import com.dpam.uanlbiblioteca.domain.repository.LibraryRepository
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -21,6 +22,7 @@ class LibrariesViewModel(
     init {
         _uiState.update { it.copy(isLoading = true) }
         viewModelScope.launch {
+            delay(200)
             _uiState.update {
                 it.copy(
                     isLoading = false,

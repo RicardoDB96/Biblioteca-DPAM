@@ -176,36 +176,36 @@ object SampleList {
             id = 1,
             title = "Principios de Administración Financiera",
             author = "Lawrence J. Gitman",
-            isbn = "9789701064080",
-            imageUrl = "https://covers.openlibrary.org/b/isbn/9789701064080-L.jpg"
+            isbn = "9786073209830",
+            imageUrl = "https://covers.openlibrary.org/b/id/8259091-L.jpg"
         ),
         BookEntity(
             id = 2,
             title = "Fundamentos de Derecho",
             author = "Juan Antonio Travieso",
             isbn = "9789875495293",
-            imageUrl = "https://covers.openlibrary.org/b/isbn/9789875495293-L.jpg"
+            imageUrl = "https://covers.openlibrary.org/b/id/13738580-L.jpg"
         ),
         BookEntity(
             id = 3,
             title = "Cálculo de una Variable",
             author = "James Stewart",
             isbn = "9789706864838",
-            imageUrl = "https://covers.openlibrary.org/b/isbn/9789706864838-L.jpg"
+            imageUrl = "https://covers.openlibrary.org/b/id/7303031-L.jpg"
         ),
         BookEntity(
             id = 4,
             title = "Introducción a la Psicología",
             author = "Charles G. Morris",
             isbn = "9786071502298",
-            imageUrl = "https://covers.openlibrary.org/b/isbn/9786071502298-L.jpg"
+            imageUrl = "https://covers.openlibrary.org/b/id/6664038-L.jpg"
         ),
         BookEntity(
             id = 5,
             title = "Biología",
             author = "Neil A. Campbell",
             isbn = "9788448164371",
-            imageUrl = "https://covers.openlibrary.org/b/isbn/9788448164371-L.jpg"
+            imageUrl = "https://covers.openlibrary.org/b/id/5272061-L.jpg"
         ),
         BookEntity(
             id = 6,
@@ -276,7 +276,252 @@ object SampleList {
             author = "Tom M. Apostol",
             isbn = "9789681626832",
             imageUrl = "https://covers.openlibrary.org/b/isbn/9789681626832-L.jpg"
-        )
+        ),
+        BookEntity(
+            id = 16,
+            title = "Física Universitaria",
+            author = "Hugh D. Young",
+            isbn = "9786071506845",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9786071506845-L.jpg"
+        ),
+        BookEntity(
+            id = 17,
+            title = "Contabilidad Financiera",
+            author = "Jerry J. Weygandt",
+            isbn = "9786071504568",
+            imageUrl = "https://covers.openlibrary.org/b/id/8036062-L.jpg"
+        ),
+        BookEntity(
+            id = 18,
+            title = "Marketing",
+            author = "Philip Kotler",
+            isbn = "9786074424016",
+            imageUrl = "https://covers.openlibrary.org/b/id/12166579-L.jpg"
+        ),
+        BookEntity(
+            id = 19,
+            title = "Derecho Constitucional Mexicano",
+            author = "Felipe Tena Ramírez",
+            isbn = "9789681617557",
+            imageUrl = "https://covers.openlibrary.org/b/id/6319085-L.jpg"
+        ),
+        BookEntity(
+            id = 20,
+            title = "Psicología Social",
+            author = "David G. Myers",
+            isbn = "9786071507460",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9786071507460-L.jpg"
+        ),
+        BookEntity(
+            id = 21,
+            title = "Química General",
+            author = "Raymond Chang",
+            isbn = "9786073205609",
+            imageUrl = "https://covers.openlibrary.org/b/id/7282298-L.jpg"
+        ),
+        BookEntity(
+            id = 22,
+            title = "Microeconomía",
+            author = "Paul A. Samuelson",
+            isbn = "9789706860793",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9789706860793-L.jpg"
+        ),
+        BookEntity(
+            id = 23,
+            title = "Historia del Arte",
+            author = "Ernst Gombrich",
+            isbn = "9788420689410",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420689410-L.jpg"
+        ),
+        BookEntity(
+            id = 24,
+            title = "Fundamentos de Física",
+            author = "David Halliday",
+            isbn = "9789681857816",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9789681857816-L.jpg"
+        ),
+        BookEntity(
+            id = 25,
+            title = "Programación en C",
+            author = "Brian W. Kernighan, Dennis M. Ritchie",
+            isbn = "9788420536349",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420536349-L.jpg"
+        ),
+        BookEntity(
+            id = 26,
+            title = "El origen de las especies",
+            author = "Charles Darwin",
+            isbn = "9788491050296",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788491050296-L.jpg"
+        ),
+        BookEntity(
+            id = 27,
+            title = "Crítica de la razón pura",
+            author = "Immanuel Kant",
+            isbn = "9788420670975",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420670975-L.jpg"
+        ),
+        BookEntity(
+            id = 28,
+            title = "Historia de la filosofía occidental",
+            author = "Bertrand Russell",
+            isbn = "9788420688901",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420688901-L.jpg"
+        ),
+        BookEntity(
+            id = 29,
+            title = "La República",
+            author = "Platón",
+            isbn = "9788420602358",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420602358-L.jpg"
+        ),
+        BookEntity(
+            id = 30,
+            title = "Breve historia del tiempo",
+            author = "Stephen Hawking",
+            isbn = "9788497593797",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788497593797-L.jpg"
+        ),
+        BookEntity(
+            id = 31,
+            title = "Cosmos",
+            author = "Carl Sagan",
+            isbn = "9788408178945",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788408178945-L.jpg"
+        ),
+        BookEntity(
+            id = 32,
+            title = "Física universitaria",
+            author = "Hugh D. Young, Roger A. Freedman",
+            isbn = "9786073214854",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9786073214854-L.jpg"
+        ),
+        BookEntity(
+            id = 33,
+            title = "La estructura de las revoluciones científicas",
+            author = "Thomas S. Kuhn",
+            isbn = "9789681605325",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9789681605325-L.jpg"
+        ),
+        BookEntity(
+            id = 34,
+            title = "La interpretación de los sueños",
+            author = "Sigmund Freud",
+            isbn = "9788420669054",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420669054-L.jpg"
+        ),
+        BookEntity(
+            id = 35,
+            title = "Manual de psicología",
+            author = "Rita L. Atkinson",
+            isbn = "9788420683012",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420683012-L.jpg"
+        ),
+        BookEntity(
+            id = 36,
+            title = "Ética para Amador",
+            author = "Fernando Savater",
+            isbn = "9788432211324",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788432211324-L.jpg"
+        ),
+        BookEntity(
+            id = 37,
+            title = "Los orígenes del totalitarismo",
+            author = "Hannah Arendt",
+            isbn = "9788491041553",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788491041553-L.jpg"
+        ),
+        BookEntity(
+            id = 38,
+            title = "Economía en una lección",
+            author = "Henry Hazlitt",
+            isbn = "9788472091377",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788472091377-L.jpg"
+        ),
+        BookEntity(
+            id = 39,
+            title = "El capital",
+            author = "Karl Marx",
+            isbn = "9788420675550",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420675550-L.jpg"
+        ),
+        BookEntity(
+            id = 40,
+            title = "La riqueza de las naciones",
+            author = "Adam Smith",
+            isbn = "9788420675468",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420675468-L.jpg"
+        ),
+        BookEntity(
+            id = 41,
+            title = "El arte de la guerra",
+            author = "Sun Tzu",
+            isbn = "9788420681360",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420681360-L.jpg"
+        ),
+        BookEntity(
+            id = 42,
+            title = "El contrato social",
+            author = "Jean-Jacques Rousseau",
+            isbn = "9788420675994",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9788420675994-L.jpg"
+        ),
+        BookEntity(
+            id = 43,
+            title = "Matemáticas discretas y sus aplicaciones",
+            author = "Kenneth H. Rosen",
+            isbn = "9780073383098",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9780073383098-L.jpg"
+        ),
+        BookEntity(
+            id = 44,
+            title = "Base de datos: Un enfoque práctico",
+            author = "Carlos Coronel, Steven Morris",
+            isbn = "9786074817955",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9786074817955-L.jpg"
+        ),
+        BookEntity(
+            id = 45,
+            title = "Introducción a los sistemas operativos",
+            author = "Abraham Silberschatz",
+            isbn = "9786074816514",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9786074816514-L.jpg"
+        ),
+        BookEntity(
+            id = 46,
+            title = "Ciencias ambientales",
+            author = "William P. Cunningham",
+            isbn = "9789681857434",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9789681857434-L.jpg"
+        ),
+        BookEntity(
+            id = 47,
+            title = "Probabilidad y estadística para ingeniería y ciencias",
+            author = "Jay L. Devore",
+            isbn = "9786074815173",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9786074815173-L.jpg"
+        ),
+        BookEntity(
+            id = 48,
+            title = "Redes de computadoras",
+            author = "Andrew S. Tanenbaum",
+            isbn = "9789701064757",
+            imageUrl = "https://covers.openlibrary.org/b/id/8084042-L.jpg"
+        ),
+        BookEntity(
+            id = 49,
+            title = "Patrones de diseño",
+            author = "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+            isbn = "9780201633610",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9780201633610-L.jpg"
+        ),
+        BookEntity(
+            id = 50,
+            title = "Diseño de compiladores",
+            author = "Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman",
+            isbn = "9780321486813",
+            imageUrl = "https://covers.openlibrary.org/b/isbn/9780321486813-L.jpg"
+        ),
     )
 
     val categories = listOf(
@@ -315,7 +560,6 @@ object SampleList {
             categoryId = 7
         ),  // Estructuras de Datos y Algoritmos → Programación
         BookCategoryEntity(bookId = 8, categoryId = 8),  // Fundamentos de Química → Química
-        BookCategoryEntity(bookId = 8, categoryId = 9),
         BookCategoryEntity(bookId = 9, categoryId = 5),  // Macroeconomía → Economía
         BookCategoryEntity(bookId = 10, categoryId = 10), // Arte y Percepción Visual → Arte
         BookCategoryEntity(
@@ -325,7 +569,42 @@ object SampleList {
         BookCategoryEntity(bookId = 12, categoryId = 8), // Química Orgánica → Química
         BookCategoryEntity(bookId = 13, categoryId = 11), // Inteligencia Artificial → IA
         BookCategoryEntity(bookId = 14, categoryId = 6), // Mecánica de Materiales → Ingeniería
-        BookCategoryEntity(bookId = 15, categoryId = 3) // Análisis Matemático → Matemáticas
+        BookCategoryEntity(bookId = 15, categoryId = 3), // Análisis Matemático → Matemáticas
+        BookCategoryEntity(bookId = 16, categoryId = 12), // Física Universitaria → Física
+        BookCategoryEntity(bookId = 17, categoryId = 1),  // Contabilidad Financiera → Administración
+        BookCategoryEntity(bookId = 18, categoryId = 1),  // Marketing → Administración
+        BookCategoryEntity(bookId = 19, categoryId = 2),  // Derecho Constitucional Mexicano → Derecho
+        BookCategoryEntity(bookId = 20, categoryId = 4),  // Psicología Social → Psicología
+        BookCategoryEntity(bookId = 21, categoryId = 8),  // Química General → Química
+        BookCategoryEntity(bookId = 22, categoryId = 9),  // Microeconomía → Economía
+        BookCategoryEntity(bookId = 23, categoryId = 10), // Historia del Arte → Arte
+        BookCategoryEntity(bookId = 24, categoryId = 12), // Fundamentos de Física → Física
+        BookCategoryEntity(bookId = 25, categoryId = 7),   // Programación en C → Programación
+        BookCategoryEntity(bookId = 26, categoryId = 12), // "El origen de las especies" → Biología
+        BookCategoryEntity(bookId = 27, categoryId = 6),  // "La crítica de la razón pura" → Filosofía
+        BookCategoryEntity(bookId = 28, categoryId = 6),  // "Meditaciones" → Filosofía
+        BookCategoryEntity(bookId = 29, categoryId = 6),  // "El contrato social" → Filosofía
+        BookCategoryEntity(bookId = 30, categoryId = 12), // "Breve historia del tiempo" → Física
+        BookCategoryEntity(bookId = 31, categoryId = 12), // "Cosmos" → Física
+        BookCategoryEntity(bookId = 32, categoryId = 12), // "El universo en una cáscara de nuez" → Física
+        BookCategoryEntity(bookId = 33, categoryId = 12), // "Física cuántica" → Física
+        BookCategoryEntity(bookId = 34, categoryId = 4), // "Psicología social" → Psicología
+        BookCategoryEntity(bookId = 35, categoryId = 4), // "La interpretación de los sueños" → Psicología
+        BookCategoryEntity(bookId = 36, categoryId = 6),  // "El existencialismo es un humanismo" → Filosofía
+        BookCategoryEntity(bookId = 37, categoryId = 9),  // "Historia de la Revolución Francesa" → Historia
+        BookCategoryEntity(bookId = 38, categoryId = 9),  // "El capital" → Economía
+        BookCategoryEntity(bookId = 39, categoryId = 9),  // "La riqueza de las naciones" → Economía
+        BookCategoryEntity(bookId = 40, categoryId = 9),  // "Teoría general del empleo, el interés y el dinero" → Economía
+        BookCategoryEntity(bookId = 41, categoryId = 6),  // "Así habló Zaratustra" → Filosofía
+        BookCategoryEntity(bookId = 42, categoryId = 6),  // "La genealogía de la moral" → Filosofía
+        BookCategoryEntity(bookId = 43, categoryId = 3), // "Cálculo infinitesimal" → Matemáticas
+        BookCategoryEntity(bookId = 44, categoryId = 7), // "Estructuras computacionales" → Tecnología
+        BookCategoryEntity(bookId = 45, categoryId = 7), // "La ingeniería de software" → Tecnología
+        BookCategoryEntity(bookId = 46, categoryId = 12), // "Los principios de la mecánica" → Física
+        BookCategoryEntity(bookId = 47, categoryId = 3), // "Álgebra lineal" → Matemáticas
+        BookCategoryEntity(bookId = 48, categoryId = 7), // "Redes de computadoras" → Tecnología
+        BookCategoryEntity(bookId = 49, categoryId = 7), // "Programación orientada a objetos" → Programación
+        BookCategoryEntity(bookId = 50, categoryId = 7),  // "Algoritmos y estructuras de datos" → Programación
     )
 
     val libraries = listOf(
@@ -372,17 +651,51 @@ object SampleList {
     )
 
     val bookLibraries = listOf(
-        BookLibraryEntity(bookId = 1, libraryId = 1),
-        BookLibraryEntity(bookId = 3, libraryId = 2),
-        BookLibraryEntity(bookId = 5, libraryId = 4),
-        BookLibraryEntity(bookId = 7, libraryId = 2),
+        BookLibraryEntity(bookId = 1, libraryId = 1, quantity = 5),
+        BookLibraryEntity(bookId = 3, libraryId = 2, quantity = 4),
+        BookLibraryEntity(bookId = 5, libraryId = 4, quantity = 1),
+        BookLibraryEntity(bookId = 7, libraryId = 2, quantity = 9),
         BookLibraryEntity(bookId = 8, libraryId = 3, quantity = 2),
         BookLibraryEntity(bookId = 8, libraryId = 1, quantity = 3),
-        BookLibraryEntity(bookId = 9, libraryId = 1),
-        BookLibraryEntity(bookId = 10, libraryId = 5),
-        BookLibraryEntity(bookId = 11, libraryId = 2),
-        BookLibraryEntity(bookId = 13, libraryId = 1),
-        BookLibraryEntity(bookId = 14, libraryId = 2),
-        BookLibraryEntity(bookId = 15, libraryId = 1)
+        BookLibraryEntity(bookId = 9, libraryId = 1, quantity = 5),
+        BookLibraryEntity(bookId = 10, libraryId = 5, quantity = 8),
+        BookLibraryEntity(bookId = 11, libraryId = 2, quantity = 11),
+        BookLibraryEntity(bookId = 13, libraryId = 1, quantity = 4),
+        BookLibraryEntity(bookId = 14, libraryId = 2, quantity = 7),
+        BookLibraryEntity(bookId = 15, libraryId = 1, quantity = 2),
+        BookLibraryEntity(bookId = 16, libraryId = 2, quantity = 2),
+        BookLibraryEntity(bookId = 17, libraryId = 1, quantity = 9),
+        BookLibraryEntity(bookId = 18, libraryId = 1, quantity = 3),
+        BookLibraryEntity(bookId = 19, libraryId = 3, quantity = 2),
+        BookLibraryEntity(bookId = 20, libraryId = 4, quantity = 2),
+        BookLibraryEntity(bookId = 21, libraryId = 3, quantity = 7),
+        BookLibraryEntity(bookId = 22, libraryId = 1, quantity = 6),
+        BookLibraryEntity(bookId = 23, libraryId = 5, quantity = 5),
+        BookLibraryEntity(bookId = 24, libraryId = 2, quantity = 1),
+        BookLibraryEntity(bookId = 25, libraryId = 2, quantity = 4),
+        BookLibraryEntity(bookId = 26, libraryId = 1, quantity = 8),
+        BookLibraryEntity(bookId = 27, libraryId = 1, quantity = 1),
+        BookLibraryEntity(bookId = 28, libraryId = 1, quantity = 5),
+        BookLibraryEntity(bookId = 34, libraryId = 1, quantity = 6),
+        BookLibraryEntity(bookId = 35, libraryId = 1, quantity = 9),
+        BookLibraryEntity(bookId = 36, libraryId = 1, quantity = 2),
+        BookLibraryEntity(bookId = 41, libraryId = 1, quantity = 5),
+        BookLibraryEntity(bookId = 42, libraryId = 1, quantity = 8),
+        BookLibraryEntity(bookId = 30, libraryId = 2, quantity = 3),
+        BookLibraryEntity(bookId = 31, libraryId = 2, quantity = 6),
+        BookLibraryEntity(bookId = 32, libraryId = 2, quantity = 9),
+        BookLibraryEntity(bookId = 33, libraryId = 2, quantity = 4),
+        BookLibraryEntity(bookId = 43, libraryId = 2, quantity = 7),
+        BookLibraryEntity(bookId = 47, libraryId = 2, quantity = 3),
+        BookLibraryEntity(bookId = 46, libraryId = 2, quantity = 5),
+        BookLibraryEntity(bookId = 37, libraryId = 3, quantity = 2),
+        BookLibraryEntity(bookId = 38, libraryId = 3, quantity = 5),
+        BookLibraryEntity(bookId = 39, libraryId = 3, quantity = 4),
+        BookLibraryEntity(bookId = 40, libraryId = 3, quantity = 2),
+        BookLibraryEntity(bookId = 44, libraryId = 4, quantity = 1),
+        BookLibraryEntity(bookId = 45, libraryId = 4, quantity = 7),
+        BookLibraryEntity(bookId = 48, libraryId = 4, quantity = 9),
+        BookLibraryEntity(bookId = 49, libraryId = 4, quantity = 7),
+        BookLibraryEntity(bookId = 50, libraryId = 4, quantity = 5),
     )
 }

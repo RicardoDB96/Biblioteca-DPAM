@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dpam.uanlbiblioteca.domain.repository.BookRepository
 import com.dpam.uanlbiblioteca.domain.repository.LoanRepository
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -39,8 +40,8 @@ class LoansViewModel(
 
     fun onLoanReturn() {
         viewModelScope.launch {
+            delay(450)
             val loan = _uiState.value.selectedLoan!!
-            println(loan)
             loansRepository.returnLoan(loan.id, loan.bookId ?: 0)
             _uiState.update { it.copy(selectedLoan = null) }
             onLoanCancel()
