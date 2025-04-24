@@ -15,7 +15,6 @@ import com.dpam.uanlbiblioteca.ui.core.navigation.navigationbar.NavigationItem
 @Composable
 fun MainScreen(mainNavController: NavHostController, navController: NavHostController) {
     val items = listOf(
-        NavigationItem.Home(),
         NavigationItem.Catalog(),
         NavigationItem.Loans(),
         NavigationItem.Libraries(),

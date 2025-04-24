@@ -4,7 +4,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Book
-import androidx.compose.material.icons.filled.Home
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
@@ -16,16 +15,6 @@ sealed class NavigationItem {
     abstract val route: String
     abstract val title: @Composable () -> String // Title is now a composable function
     abstract val icon: @Composable () -> Unit
-
-    data class Home(
-        override val route: String = Routes.Home.route,
-        override val title: @Composable () -> String = {
-            LocalContext.current.getString(R.string.home)
-        },
-        override val icon: @Composable () -> Unit = {
-            Icon(imageVector = Icons.Default.Home, contentDescription = title())
-        },
-    ) : NavigationItem()
 
     data class Catalog(
         override val route: String = Routes.Catalog.route,
